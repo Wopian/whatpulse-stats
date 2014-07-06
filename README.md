@@ -1,4 +1,4 @@
 WhatPulse-Stats
 ===============
 
-Stats for whatpulse.
+I'll edit this at some point.
