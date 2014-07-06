@@ -1,4 +1,4 @@
-<?php include './in/header.php'; ?>
+<?php include './assets/temp/header.php'; ?>
           <script>
 window.history.replaceState('page2', 'Title', '/team/<?php echo $_GET["teamid"] ?>');
 </script>
@@ -159,11 +159,11 @@ $inception = $totaltime;
     }
     function printStats() {
       if (!empty ($this->xml->Name)) {
-        include_once "./in/t.php";
+        include_once "./assets/temp/t.php";
       };
 
       if (empty ($this->xml->Name)) {
-        include_once "./in/t_empty.php";
+        include_once "./assets/temp/t_empty.php";
       };
 /*echo 'Account Name: '.$this->xml->AccountName.' (id ' .$this->xml->UserID.")\n";
   echo $this->xml->Pulses.' pulses (last pulsed '.number_format($this->lastpulseago/3600,2).' hours ago '.date('n/j/y @ g:iA',$this->lastpulse).")\n";
@@ -190,4 +190,4 @@ $stats = new WhatPulse($stats_id);
 $stats->printStats();
 ?>
           </section>
-<?php include './in/footer.php'; ?>
+<?php include './assets/temp/footer.php'; ?>

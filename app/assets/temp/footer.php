@@ -48,8 +48,8 @@
 <!-- Bootstrap -->
 <!-- App -->
 <script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="/js/app.v1.js"></script>
-<script src="/js/app.plugin.js"></script>
+<script src="/assets/js/app.v1.js"></script>
+<script src="/assets/js/app.plugin.js"></script>
 <!--<script src="/js/scroll/smoothscroll.js"></script>-->
 </body>
 </html>

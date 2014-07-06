@@ -1,8 +1,7 @@
+<?php include './assets/temp/h.php'; ?>
 <script>
 window.history.replaceState('page2', 'Title', '/user/<?php echo $_GET["id"] ?>');
 </script>
-
-<?php include './in/h.php'; ?>
           <section class="scrollable wrapper w-f">
             <?
 
@@ -946,4 +945,4 @@ $stats->printStats();
 
 ?>
           </section>
-<?php include './in/footer.php'; ?>
+<?php include './assets/temp/footer.php'; ?>

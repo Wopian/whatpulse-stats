@@ -1,4 +1,4 @@
-<?php include './in/header.php'; ?>
+<?php include './assets/temp/header.php'; ?>
           <section class="scrollable wrapper w-f">
             <p class="h3 text-center">WhatPulse Stats<br /><small>&nbsp;</small></p>
             <br />
@@ -63,4 +63,4 @@
               </div>
             </div>
           </section>
-<?php include './in/footer.php'; ?>
+<?php include './assets/temp/footer.php'; ?>
