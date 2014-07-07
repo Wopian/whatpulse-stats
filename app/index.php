@@ -37,7 +37,6 @@
                         </div>
                     </div>
                 </form>
-
                 <br />
                 <br />
                 <p class="h4">Team Stats <span class="label bg-danger">Beta</span></p>
