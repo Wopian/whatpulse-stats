@@ -4,3 +4,6 @@ WhatPulse-Stats
 ===============
 
 I'll edit this at some point.
+
+/app -> /13
+/dev -> /3
