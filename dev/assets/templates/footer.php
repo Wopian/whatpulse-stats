@@ -50,6 +50,7 @@
 <script src="//code.jquery.com/jquery-latest.min.js"></script>
 <script src="/assets/js/app.v1.js"></script>
 <script src="/assets/js/app.plugin.js"></script>
-<!--<script src="/js/scroll/smoothscroll.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+<script src="/assets/js/jstorage.js"></script>
 </body>
 </html>
