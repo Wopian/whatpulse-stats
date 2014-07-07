@@ -1,13 +1,4 @@
-<?php include_once './assets/templates/header.php'; ?>
-    <section class="scrollable wrapper w-f">
-        <p class="h3 text-center">WhatPulse Stats<br /><small>&nbsp;</small></p>
-        <br />
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-4">
-            </div>
-            
-            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
-                <script type="text/javascript">
+<script type="text/javascript">
                     function get_action() {
                         userid = document.getElementById('userid').value;
                         /*return '/user/' + userid;*/
@@ -18,11 +9,17 @@
                         return '/team/' + teamid;
                     }
                 </script>
-
+<?php include './assets/templates/header.php'; ?>
+    <section class="scrollable wrapper w-f">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-4">
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
                 <p class="h4">User Stats</p>
                 <br />
 
-                <form name="api" class="form-horizontal" method="GET" action="">
+                <form name="api" class="form-horizontal" method="GET">
                     <div class="form-group">
                         <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-3">
                             <div class="input-group">

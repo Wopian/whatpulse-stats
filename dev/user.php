@@ -1,7 +1,6 @@
-<?php include './assets/templates/h.php'; ?>
 <script>
 window.history.replaceState({}, 'WhatPulse Stats', '/user/<?php echo $_GET["id"] ?>');
-</script>
+</script><?php include './assets/templates/h.php'; ?>
           <section class="scrollable wrapper w-f">
             <?
 
