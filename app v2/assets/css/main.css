@@ -1,0 +1,229 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+* { padding: 0; margin: 0; }
+body { background: #F2F4F8; font-family: 'Open Sans', sans-serif; letter-spacing: 1px;}
+ 
+ 
+header {
+    text-align: justify;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 1em 3em 1em 3em;
+    background: #177BBB;
+    color: #fff;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 1.5em;
+}
+ 
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+    color: #FBF7F0;
+    text-decoration: none;
+    font-weight:400;
+}
+
+header nav a:hover {
+  color: #FBF7F0;
+  opacity: 0.8;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+
+small {
+  font-size: 1em;
+}
+
+#chart-area {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.peity {
+  display: inline-block;
+  margin-left: .2em;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #788288;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Grid-cell {
+  flex-grow: 2;
+  /*min-width:25%;*/
+  min-width:auto;
+  text-align: center;
+  padding: 2em 1em 0 1em;
+}
+
+.Grid-cell > div {
+  display: flex;
+  align-items: middle;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 5px;
+  font-weight: 300;
+background-color: #fff;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.Grid--top {
+  align-items: flex-start;
+}
+
+.Grid--bottom {
+  align-items: flex-end;
+}
+
+.Grid--center {
+  align-items: center;
+}
+
+.Grid-cell--top {
+  align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+
+.Grid-cell--center {
+  align-self: center;
+}
+
+.h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.Per {
+  display: flex;
+  align-items: middle;
+}
+
+.Per > div {
+  min-width: 25%;
+}
+
+.Per > div > span {
+  display: block;
+}
+
+@media screen and (max-width:980px){
+
+  .Grid {
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 720px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .Grid-cell {
+      min-width:auto;
+    }
+
+    .Per {
+      display: inline-block;
+    }
+
+    .Per > div {
+      display: inline-block;
+    }
+     
+}
+
+@media screen and (max-width: 460px){
+    
+    header {
+      height: 40px;
+    }
+
+    header div{
+      line-height: 0px;
+      height: 20px;
+    }
+
+    header nav {
+        visibility: hidden;
+    }
+
+    .Grid {
+      margin: 0;
+    }
+
+    .Grid-cell {
+      min-width:auto;
+    }
+
+    .Per > div {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .Per > div:last-of-type {
+      margin-bottom: 0;
+    }
+     
+}
