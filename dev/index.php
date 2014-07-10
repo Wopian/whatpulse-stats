@@ -1,14 +1,14 @@
 <script type="text/javascript">
-                    function get_action() {
-                        userid = document.getElementById('userid').value;
-                        /*return '/user/' + userid;*/
-                        window.history.replaceState('page2', 'Title', '/user/' + userid);
-                    }
-                    function get_action2() {
-                        teamid = document.getElementById('teamid').value;
-                        return '/team/' + teamid;
-                    }
-                </script>
+    function get_action() {
+        userid = document.getElementById('userid').value;
+        /*return '/user/' + userid;*/
+        window.history.replaceState('page2', 'Title', '/user/' + userid);
+    }
+    function get_action2() {
+        teamid = document.getElementById('teamid').value;
+        return '/team/' + teamid;
+    }
+</script>
 <?php include './assets/templates/header.php'; ?>
     <section class="scrollable wrapper w-f">
         <div class="row">
