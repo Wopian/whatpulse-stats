@@ -17,35 +17,26 @@ body { background: #F2F4F8; font-family: 'Open Sans', sans-serif; letter-spacing
  
 header {
     text-align: justify;
-    text-transform: uppercase;
-    height: 40px;
-    padding: 1em 3em 1em 3em;
+    text-transform: none;
+    padding: .2em 3em .2em 3em;
     background: #177BBB;
     color: #fff;
-}
- 
-header::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
 }
  
 header > div,
 header > div::before,
 header nav,
 header > div h1 {
-    display: inline-block;
+    display: block;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
+    height: auto;
 }
- 
-header > div {
-    height: 100%;
-}
- 
-header > div::before {
-    content: '';
-    height: 100%;
+
+header nav {
+  padding-bottom: .2em;
 }
  
 header > div h1 {
@@ -53,20 +44,27 @@ header > div h1 {
 }
  
 header nav a {
-    padding: 0 0.6em;
+    padding: 0 0.3em 0 0.3em;
     white-space: nowrap;
     color: #FBF7F0;
     text-decoration: none;
-    font-weight:400;
+    font-weight: 400;
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+
 }
 
-header nav a:hover {
+header nav a:hover, .active {
   color: #FBF7F0;
-  opacity: 0.8;
+  opacity: 1;
 }
  
 header nav a:last-child {
     padding-right: 0;
+}
+
+header nav a:first-child {
+    padding-left: 0;
 }
 
 small {
@@ -89,8 +87,7 @@ small {
   list-style: none;
   color: #788288;
   width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 
 .Grid-cell {
@@ -98,7 +95,7 @@ small {
   /*min-width:25%;*/
   min-width:auto;
   text-align: center;
-  padding: 2em 1em 0 1em;
+  padding: 1em .5em 0 .5em;
 }
 
 .Grid-cell > div {
@@ -140,8 +137,13 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 .h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
+}
+
+.h2 > svg {
+  position: relative;
+  top: 2px;
 }
 
 .Per {
@@ -157,6 +159,15 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
   display: block;
 }
 
+main > p {
+  color: #788288;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 2em;
+}
+
 @media screen and (max-width:980px){
 
   .Grid {
@@ -166,23 +177,6 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 @media screen and (max-width: 720px){
-     
-    header {
-        height: auto;
-    }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-
-    .Grid-cell {
-      min-width:auto;
-    }
 
     .Per {
       display: inline-block;
@@ -196,27 +190,6 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
 
 @media screen and (max-width: 460px){
     
-    header {
-      height: 40px;
-    }
-
-    header div{
-      line-height: 0px;
-      height: 20px;
-    }
-
-    header nav {
-        visibility: hidden;
-    }
-
-    .Grid {
-      margin: 0;
-    }
-
-    .Grid-cell {
-      min-width:auto;
-    }
-
     .Per > div {
       display: block;
       margin-bottom: 1em;

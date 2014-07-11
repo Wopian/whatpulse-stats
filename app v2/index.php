@@ -27,10 +27,15 @@
 
 <header>
   <div><h1>WhatPulse Stats</h1></div>
-  <nav><a class="cl-effect-15" href="./user">User Stats</a><a>Team Stats</a><a>Compare</a></nav>
+  <nav><a href="./#user">User</a> <a href="./#team">Team</a> <a href="./#compare">Compare</a></nav>
 </header>
 
 <main>
+
+  <p>
+    User Info
+  </p>
+
   <div class="Grid">
 
     <div class="Grid-cell">
@@ -44,7 +49,7 @@
     <div class="Grid-cell">
       <div>
         <small>Joined</small>
-        <span class="h2">598.81</span>
+        <span class="h2">598.8</span>
         <small>Days Ago</small>
       </div>
     </div>
@@ -53,7 +58,7 @@
       <div>
         <small>Pulses</small>
         <span class="h2">5932</span>
-        <small>&nbsp;</small>
+        <small>Approx. 10 Per Day</small>
       </div>
     </div>
 
@@ -64,6 +69,14 @@
         <small>Minutes Ago</small>
       </div>
     </div>
+
+  </div>
+
+  <p>
+    User Stats
+  </p>
+
+  <div class="Grid">
 
     <div class="Grid-cell">
       <div>
@@ -100,7 +113,7 @@
     <div class="Grid-cell">
       <div>
         <small>Downloaded</small>
-        <span class="h2">2.26 TB</span>
+        <span class="h2">2.2 TB</span>
         <small>1126th</small>
       </div>
     </div>
@@ -108,7 +121,7 @@
     <div class="Grid-cell">
       <div>
         <small>Uploaded</small>
-        <span class="h2">552.61 GB</span>
+        <span class="h2">552.6 GB</span>
         <small>2207th</small>
       </div>
     </div>
@@ -124,7 +137,7 @@
     <div class="Grid-cell">
       <div>
         <small>Download & Upload Ratio</small>
-        <span class="h2 chart">4.19:1<span class="pie pie-a" data-diameter="24">552.61,2314.24</span></span>
+        <span class="h2 chart">4.19:1<span class="pie pie-a" data-diameter="24">552.6,2314.2</span></span>
         <small>Download To Upload</small>
       </div>
     </div>
@@ -132,7 +145,7 @@
     <div class="Grid-cell">
       <div>
         <small>Uptime</small>
-        <span class="h2">3,341.76</span>
+        <span class="h2">3,341.7</span>
         <small>7433rd</small>
       </div>
     </div>
@@ -140,7 +153,7 @@
     <div class="Grid-cell">
       <div>
         <small>Average Uptime</small>
-        <span class="h2">5.58</span>
+        <span class="h2">5.5</span>
         <small>Hours</small>
       </div>
     </div>
@@ -148,36 +161,188 @@
     <div class="Grid-cell">
       <div>
         <small>Uptime</small>
-        <span class="h2 chart">23.25%<span class="pie pie-a" data-diameter="24">14371.4,3341.76</span></span>
+        <span class="h2 chart">23.2%<span class="pie pie-a" data-diameter="24">14371.4,3341.76</span></span>
         <small>Of Account Age</small>
+      </div>
+    </div>
+
+  </div>
+
+  <p>
+    Key Stats
+  </p>
+
+  <div class="Grid">
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">5.8</span>
+        <small>Per Minute</small>
       </div>
     </div>
 
     <div class="Grid-cell">
       <div>
-        <small>Keys</small>
-        <div class="Per">
-          <div>
-            <span class="h2">5.89</span>
-            <small>Per Minute</small>
-          </div>
-          <div>
-            <span class="h2">353.66</span>
-            <small>Per Hour</small>
-          </div>
-          <div>
-            <span class="h2">8,487.91</span>
-            <small>Per Day</small>
-          </div>
-          <div>
-            <span class="h2">258,344.85</span>
-            <small>Per Month</small>
-          </div>
-        </div>
+        <span class="h2">353.6</span>
+        <small>Per Hour</small>
       </div>
     </div>
-    
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">8,487.9</span>
+        <small>Per Day</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">258,344.8</span>
+        <small>Per Month</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">3.1 M</span>
+        <small>Per Year</small>
+      </div>
+    </div>
+
   </div>
+
+  <p>
+    Click Stats
+  </p>
+
+  <div class="Grid">
+
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">2.8</span>
+        <small>Per Minute</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">172.2</span>
+        <small>Per Hour</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">4,133.1</span>
+        <small>Per Day</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">125,799.2</span>
+        <small>Per Month</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">1.5 M</span>
+        <small>Per Year</small>
+      </div>
+    </div>
+
+  </div>
+
+  <p>
+    Download Stats
+  </p>
+
+  <div class="Grid">
+
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">2.9 MB</span>
+        <small>Per Minute</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">174.9 MB</span>
+        <small>Per Hour</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">4.1 GB</span>
+        <small>Per Day</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">124.8 GB</span>
+        <small>Per Month</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">1.4 TB</span>
+        <small>Per Year</small>
+      </div>
+    </div>
+
+  </div>
+
+  <p>
+    Upload Stats
+  </p>
+
+  <div class="Grid">
+
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">706 KB</span>
+        <small>Per Minute</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">41.6 MB</span>
+        <small>Per Hour</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">999.5 MB</span>
+        <small>Per Day</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">29.7 GB</span>
+        <small>Per Month</small>
+      </div>
+    </div>
+
+    <div class="Grid-cell">
+      <div>
+        <span class="h2">365.5 GB</span>
+        <small>Per Year</small>
+      </div>
+    </div>
+
+  </div>
+
 </main>
 
 <footer>
