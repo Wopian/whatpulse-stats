@@ -70,6 +70,16 @@ header nav a:first-child {
   padding-left: 0;
 }
 
+p {
+  color: #788288;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  text-align: center;
+  width: 100%;
+}
+
 small {
   font-size: 1em;
 }
@@ -158,29 +168,6 @@ small {
 .h2 > svg {
   position: relative;
   top: 2px;
-}
-
-.Per {
-  align-items: middle;
-  display: flex;
-}
-
-.Per > div {
-  min-width: 25%;
-}
-
-.Per > div > span {
-  display: block;
-}
-
-p {
-  color: #788288;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: .5em;
-  padding-top: .5em;
-  text-align: center;
-  width: 100%;
 }
 
 @media screen and (max-width:980px){
