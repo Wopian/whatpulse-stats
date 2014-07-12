@@ -26,6 +26,19 @@
     });
 
   </script>
+  <style>
+    @media screen and (max-width: 720px){
+      .User {
+        order: 1;
+      }
+      .Team {
+        order: 2;
+      }
+      .Compare {
+        order: 3;
+      }
+    }
+</style>
 </head>
 
 <body>
@@ -41,7 +54,7 @@
 
   <div class="Grid">
 
-    <div class="Grid-cell">
+    <div class="Grid-cell User">
       <div>
         <small>User Stats</small>
         <input type="text" placeholder="Wopian" />
@@ -49,7 +62,7 @@
       </div>
     </div>
 
-    <div class="Grid-cell">
+    <div class="Grid-cell Compare">
       <div>
         <small>Compare Stats</small>
         <!--<form>
@@ -67,7 +80,7 @@
       </div>
     </div>
 
-    <div class="Grid-cell">
+    <div class="Grid-cell Team">
       <div>
         <small>Team Stats</small>
         <input type="text" placeholder="Reddit" />
