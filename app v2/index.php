@@ -17,11 +17,11 @@
       $("span.pie").peity("pie");
 
       $(".pie-a").peity("pie", {
-        fill: ["#F2F4F8", "#177BBB"]
+        fill: ["#E1E6EF", "#177BBB"]
       });
 
       $(".pie-b").peity("pie", {
-        fill: ["#177BBB", "#F2F4F8"]
+        fill: ["#177BBB", "#E1E6EF"]
       });
     });
 
@@ -37,6 +37,7 @@
 
 <main>
 
+<div class="bg">
   <p>
     User Info
   </p>
@@ -76,7 +77,9 @@
     </div>
 
   </div>
+</div>
 
+<div class="bg2">
   <p>
     User Stats
   </p>
@@ -172,7 +175,9 @@
     </div>
 
   </div>
+</div>
 
+<div class="bg">
   <p>
     Key Stats
   </p>
@@ -215,7 +220,9 @@
     </div>
 
   </div>
+</div>
 
+<div class="bg2">
   <p>
     Click Stats
   </p>
@@ -259,7 +266,9 @@
     </div>
 
   </div>
+</div>
 
+<div class="bg">
   <p>
     Download Stats
   </p>
@@ -303,7 +312,9 @@
     </div>
 
   </div>
+</div>
 
+<div class="bg2">
   <p>
     Upload Stats
   </p>

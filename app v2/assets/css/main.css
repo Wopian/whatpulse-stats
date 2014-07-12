@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+* { padding: 0; margin: 0; }
+body { background: #F2F4F8; font-family: 'Open Sans', sans-serif; letter-spacing: 1px;}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -10,11 +14,6 @@ main {
   flex: 1;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-* { padding: 0; margin: 0; }
-body { background: #F2F4F8; font-family: 'Open Sans', sans-serif; letter-spacing: 1px;}
- 
- 
 header {
     text-align: justify;
     text-transform: none;
@@ -71,6 +70,18 @@ small {
   font-size: 1em;
 }
 
+.bg {
+  background: #F2F4F8;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.bg2{
+  background: #e1e6ef;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
 #chart-area {
   max-width: 25px;
   max-height: 25px;
@@ -91,7 +102,7 @@ small {
 }
 
 .Grid-cell {
-  flex-grow: 2;
+  flex-grow: 1;
   /*min-width:25%;*/
   min-width:auto;
   text-align: center;
@@ -159,13 +170,14 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
   display: block;
 }
 
-main > p {
+p {
   color: #788288;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 @media screen and (max-width:980px){
