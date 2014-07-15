@@ -7,13 +7,12 @@
     # Redirect /user/id
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^user/(([^/]*)$) /user.php?id=$1 [L]
-    RewriteRule ^team/(([^/]*)$) /team.php?teamid=$1 [L]
-</IfModule>
+    RewriteRule ^user/([A-Za-z0-9-]+)/?$ /user.php?id=$1 [NC,L] # Process users
+    RewriteRule ^team/([A-Za-z0-9-]+)/?$ /team.php?teamid=$1 [NC,L] # Process teams
 
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule . / [L,R=302]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule . / [NC,L,R=302] #Redirect 404 urls to index
+</IfModule>
 
 <IfModule mod_expires.c>
 ExpiresActive On

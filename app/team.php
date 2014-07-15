@@ -1,7 +1,4 @@
 <?php include './assets/temp/header.php'; ?>
-          <script>
-window.history.replaceState('page2', 'Title', '/team/<?php echo $_GET["teamid"] ?>');
-</script>
           <section class="scrollable wrapper w-f">
             <?
 
