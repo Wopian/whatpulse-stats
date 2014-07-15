@@ -10,23 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />  
   <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="./assets/javascript/chart.js"></script>
-  <script src="./assets/javascript/modernizr.custom.js"></script>
-  <script>
-    $(function() {
-      $("span.pie").peity("pie");
-
-      $(".pie-a").peity("pie", {
-        fill: ["#E1E6EF", "#177BBB"]
-      });
-
-      $(".pie-b").peity("pie", {
-        fill: ["#177BBB", "#E1E6EF"]
-      });
-    });
-
-  </script>
   <style>
     @media screen and (max-width: 720px){
       .User {
@@ -58,8 +41,10 @@
     <div class="Grid-cell User">
       <div>
         <small>User Stats</small>
-        <input type="text" placeholder="Wopian" />
-        <button>View</button>
+        <form method="POST" onSubmit="_User()"> 
+          <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
+          <button type="submit">View</button>
+        </form>
       </div>
     </div>
 
@@ -97,6 +82,5 @@
 <footer>
 <pre>dev.boomcraft.co.uk/4</pre>
 </footer>
-
 </body>
 </html>

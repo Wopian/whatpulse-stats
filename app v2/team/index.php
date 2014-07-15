@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="../assets/javascript/chart.js"></script>
-  <script src="../assets/javascript/modernizr.custom.js"></script>
   <script>
     $(function() {
       $("span.pie").peity("pie");
