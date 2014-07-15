@@ -3,8 +3,11 @@
 WhatPulse-Stats
 ===============
 
-I'll edit this at some point.
+Stable Release (app): [Visit](whatpulse.jamesharris.net)
 
-/app -> /13
+Dev Release (app v2): [Visit](dev.boomcraft.co.uk/4)
 
-/dev -> /3
+
+app -> 13
+
+app v2 -> 4
