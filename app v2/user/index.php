@@ -2,16 +2,17 @@
 <html prefix="og: http://ogp.me/ns#">
 <head>
   <title>Wopian - WhatPulse User Stats</title>
+  <meta property="og:title" content="WhatPulse Stats" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://dev.boomcraft.co.uk/4" />
+  <meta property="og:image" content="http://dev.boomcraft.co.uk/4/assets/logo.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />  
   <link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="../assets/javascript/chart.js"></script>
-  <meta property="og:title" content="WhatPulse Stats" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://dev.boomcraft.co.uk/4" />
-  <meta property="og:image" content="http://dev.boomcraft.co.uk/4/assets/logo.png" />
+  <script src="../assets/javascript/modernizr.custom.js"></script>
   <script>
     $(function() {
       $("span.pie").peity("pie");
@@ -35,7 +36,7 @@
   <nav><a href="./">User</a> <a href="../team">Team</a> <a href="../compare">Compare</a></nav>
 </header>
 
-<main>
+<main id="wrapper">
 
 <div class="bg">
   <p>

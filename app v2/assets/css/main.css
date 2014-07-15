@@ -218,6 +218,25 @@ button:hover {
   color: rgba(255,255,255,1);
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #177BBB;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #177BBB;
+}
+
 @media screen and (max-width:980px){
 
   .Grid {
