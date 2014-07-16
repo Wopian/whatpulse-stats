@@ -4,7 +4,7 @@
   <title>WhatPulse Stats</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
   <style>
     @media screen and (max-width: 720px){
@@ -35,10 +35,8 @@
         <div class="Grid-cell User">
           <div>
             <small>User Stats</small>
-            <form method="POST" onsubmit="_user()">
-              <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
-              <button type="submit">View</button>
-            </form>
+            <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
+            <button type="submit" onclick="user()">View</button>
           </div>
         </div>
 
@@ -54,8 +52,9 @@
         <div class="Grid-cell Team">
           <div>
             <small>Team Stats</small>
-            <input type="text" placeholder="Reddit" />
-            <button>View</button>
+            <input id="teamid" name="teamid" type="text" placeholder="Reddit" value="" required>
+            <button type="submit" onclick="team()">View</button>
+            </form>
           </div>
         </div>
 
@@ -69,13 +68,15 @@
   </footer>
 
   <script type="text/javascript">
-    function get_User() {
+    function user() {
       userid = document.getElementById('userid').value;
-      window.history.replaceState('page2', 'Title', '/user/' + userid);
+      /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
+      location.href = '/user/' + userid;
     }
-    function get_Team() {
+    function team() {
       teamid = document.getElementById('teamid').value;
-      window.history.replaceState('page2', 'Title', '/team/' + teamid);
+      /*window.history.replaceState('page2', 'Title', '/team/' + teamid);*/
+      location.href = '/team/' + teamid;
     }
   </script>
 
