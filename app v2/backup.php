@@ -47,12 +47,12 @@ Hi
 
 <script>
 var cbpAnimatedHeader = (function() {
- 
+
     var docElem = document.documentElement,
         header = document.querySelector( '.cbp-af-header' ),
         didScroll = false,
         changeHeaderOn = 300;
- 
+
     function init() {
         window.addEventListener( 'scroll', function( event ) {
             if( !didScroll ) {
@@ -61,7 +61,7 @@ var cbpAnimatedHeader = (function() {
             }
         }, false );
     }
- 
+
     function scrollPage() {
         var sy = scrollY();
         if ( sy >= changeHeaderOn ) {
@@ -72,13 +72,13 @@ var cbpAnimatedHeader = (function() {
         }
         didScroll = false;
     }
- 
+
     function scrollY() {
         return window.pageYOffset || docElem.scrollTop;
     }
- 
+
     init();
- 
+
 })();
 </script>
 </body>
