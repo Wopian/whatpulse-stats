@@ -8,7 +8,7 @@
   <meta property="og:image" content="http://dev.boomcraft.co.uk/4/assets/logo.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />  
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
   <style>
     @media screen and (max-width: 720px){
@@ -23,10 +23,10 @@
       }
     }
 </style>
-</head>
+ </head>
 
 <body>
-
+  
 <header>
   <div><h1><a href="./" data-animation="4">WhatPulse Stats</a></h1></div>
   <nav><a href="./user" data-animation="3">User</a> <a href="./team" data-animation="3">Team</a> <a href="./#compare" data-animation="3">Compare</a></nav>
@@ -41,7 +41,7 @@
     <div class="Grid-cell User">
       <div>
         <small>User Stats</small>
-        <form method="POST" onSubmit="_User()"> 
+        <form method="POST" onSubmit="_User()">
           <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
           <button type="submit">View</button>
         </form>
