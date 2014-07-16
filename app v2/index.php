@@ -54,7 +54,6 @@
             <small>Team Stats</small>
             <input id="teamid" name="teamid" type="text" placeholder="Reddit" value="" required>
             <button type="submit" onclick="team()">View</button>
-            </form>
           </div>
         </div>
 
