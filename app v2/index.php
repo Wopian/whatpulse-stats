@@ -1,11 +1,7 @@
 <!doctype html>
-<html prefix="og: http://ogp.me/ns#">
+<html>
 <head>
   <title>WhatPulse Stats</title>
-  <meta property="og:title" content="WhatPulse Stats" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://dev.boomcraft.co.uk/4" />
-  <meta property="og:image" content="http://dev.boomcraft.co.uk/4/assets/logo.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
@@ -22,65 +18,66 @@
         order: 3;
       }
     }
-</style>
- </head>
+  </style>
+</head>
 
 <body>
-  
-<header>
-  <div><h1><a href="./" data-animation="4">WhatPulse Stats</a></h1></div>
-  <nav><a href="./user" data-animation="3">User</a> <a href="./team" data-animation="3">Team</a> <a href="./#compare" data-animation="3">Compare</a></nav>
-</header>
+  <header>
+    <div><h1><a href="./" data-animation="4">WhatPulse Stats</a></h1></div>
+    <nav><a href="./user" data-animation="3">User</a> <a href="./team" data-animation="3">Team</a> <a href="./#compare" data-animation="3">Compare</a></nav>
+  </header>
 
-<main>
+  <main>
 
-<div class="bg">
+    <div class="bg">
+      <div class="Grid">
 
-  <div class="Grid">
+        <div class="Grid-cell User">
+          <div>
+            <small>User Stats</small>
+            <form method="POST" onsubmit="_user()">
+              <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
+              <button type="submit">View</button>
+            </form>
+          </div>
+        </div>
 
-    <div class="Grid-cell User">
-      <div>
-        <small>User Stats</small>
-        <form method="POST" onSubmit="_User()">
-          <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
-          <button type="submit">View</button>
-        </form>
+        <div class="Grid-cell Compare">
+          <div>
+            <small>Compare Stats</small>
+            <br />
+            <span class="h2">Coming Soon!</span>
+            <br />
+          </div>
+        </div>
+
+        <div class="Grid-cell Team">
+          <div>
+            <small>Team Stats</small>
+            <input type="text" placeholder="Reddit" />
+            <button>View</button>
+          </div>
+        </div>
+
       </div>
     </div>
+    
+  </main>
 
-    <div class="Grid-cell Compare">
-      <div>
-        <small>Compare Stats</small>
-        <!--<form>
-          <input type="text" class="Compare" />
-          <input type="text" /><br />
-          <form>
-            <input type="radio" name="selector" value="users" checked />Users
-            <input type="radio" name="selector" value="teams"/>Teams<br />
-          </form>
-          <button>Compare</button>
-        </form>-->
-        <br />
-        <span class="h2">Coming Soon!</span>
-        <br />
-      </div>
-    </div>
+  <footer>
+    <pre>dev.boomcraft.co.uk/4</pre>
+  </footer>
 
-    <div class="Grid-cell Team">
-      <div>
-        <small>Team Stats</small>
-        <input type="text" placeholder="Reddit" />
-        <button>View</button>
-      </div>
-    </div>
+  <script type="text/javascript">
+    function get_User() {
+      userid = document.getElementById('userid').value;
+      window.history.replaceState('page2', 'Title', '/user/' + userid);
+    }
+    function get_Team() {
+      teamid = document.getElementById('teamid').value;
+      window.history.replaceState('page2', 'Title', '/team/' + teamid);
+    }
+  </script>
 
-  </div>
-</div>
-
-</main>
-
-<footer>
-<pre>dev.boomcraft.co.uk/4</pre>
-</footer>
 </body>
 </html>
