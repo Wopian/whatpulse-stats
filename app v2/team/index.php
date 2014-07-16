@@ -316,8 +316,7 @@
     <pre>dev.boomcraft.co.uk/4</pre>
   </footer>
 
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="../assets/javascript/chart.js"></script>
+  <script src="../assets/javascript/app.js"></script>
   <script>
     $(function() {
       $("span.pie").peity("pie");
