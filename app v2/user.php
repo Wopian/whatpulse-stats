@@ -207,7 +207,7 @@
                     <div>
                       <small>Keys</small>
                       <span class="h2">'.$this->keys->total.'</span>
-                      <small>'.$this->xml->Ranks->Keys.'</small>
+                      <small>'.formatOrd(str_replace(",", "",$this->xml->Ranks->Keys)).'</small>
                     </div>
                   </div>
 
@@ -215,7 +215,7 @@
                     <div>
                       <small>Clicks</small>
                       <span class="h2">'.$this->clicks->total.'</span>
-                      <small>'.$this->xml->Ranks->Clicks.'</small>
+                      <small>'.formatOrd(str_replace(",", "",$this->xml->Ranks->Clicks)).'</small>
                     </div>
                   </div>
 
@@ -286,7 +286,7 @@
                   <div class="Grid-cell">
                     <div>
                       <small>Uptime</small>
-                      <span class="h2 chart">'.bigNum((str_replace(",", "",$this->uptime)/(str_replace(",", "",$this->days)*24))*100).'%<span class="pie pie-a" data-diameter="24">'.str_replace(",", "",$this->uptime).','.str_replace(",", "",$this->days).'</span></span>
+                      <span class="h2 chart">'.bigNum((str_replace(",", "",$this->uptime)/(str_replace(",", "",$this->days)*24))*100).'%</span>
                       <small>Of Account Age</small>
                     </div>
                   </div>
@@ -300,35 +300,35 @@
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">5.8</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->keys->perminute)).'</span>
                       <small>Per Minute</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">353.6</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->keys->perhour)).'</span>
                       <small>Per Hour</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">8,487.9</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->keys->perday)).'</span>
                       <small>Per Day</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">258,344.8</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->keys->permonth)).'</span>
                       <small>Per Month</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">3.1 M</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->keys->peryear)).'</span>
                       <small>Per Year</small>
                     </div>
                   </div>
@@ -342,35 +342,35 @@
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">2.8</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->clicks->perminute)).'</span>
                       <small>Per Minute</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">172.2</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->clicks->perhour)).'</span>
                       <small>Per Hour</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">4,133.1</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->clicks->perday)).'</span>
                       <small>Per Day</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">125,799.2</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->clicks->permonth)).'</span>
                       <small>Per Month</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">1.5 M</span>
+                      <span class="h2">'.bigNum(str_replace(",", "",$this->clicks->peryear)).'</span>
                       <small>Per Year</small>
                     </div>
                   </div>
@@ -384,35 +384,35 @@
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">2.9 MB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->download->perminute)).'</span>
                       <small>Per Minute</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">174.9 MB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->download->perhour)).'</span>
                       <small>Per Hour</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">4.1 GB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->download->perday)).'</span>
                       <small>Per Day</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">124.8 GB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->download->permonth)).'</span>
                       <small>Per Month</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">1.4 TB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->download->peryear)).'</span>
                       <small>Per Year</small>
                     </div>
                   </div>
@@ -426,35 +426,35 @@
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">706 KB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->upload->perminute)).'</span>
                       <small>Per Minute</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">41.6 MB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->upload->perhour)).'</span>
                       <small>Per Hour</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">999.5 MB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->upload->perday)).'</span>
                       <small>Per Day</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">29.7 GB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->upload->permonth)).'</span>
                       <small>Per Month</small>
                     </div>
                   </div>
 
                   <div class="Grid-cell">
                     <div>
-                      <span class="h2">365.5 GB</span>
+                      <span class="h2">'.formatBytes(str_replace(",", "",$this->upload->peryear)).'</span>
                       <small>Per Year</small>
                     </div>
                   </div>
