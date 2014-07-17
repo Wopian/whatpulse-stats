@@ -200,6 +200,11 @@ button:hover {
   color: rgba(255,255,255,1);
 }
 
+.Exist {
+  max-width: 33%;
+  margin-left: 33%
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -226,7 +231,15 @@ button:hover {
 }
 
 @media screen and (max-width: 720px){
+  .Exist {
+    max-width: 50%;
+    margin-left: 25%
+  }
 }
 
 @media screen and (max-width: 460px){
+  .Exist {
+    max-width: 100%;
+    margin-left: 0;
+  }
 }

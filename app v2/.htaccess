@@ -1,24 +1,24 @@
 <IfModule mod_rewrite.c>
-    Options +FollowSymLinks -MultiViews
+  Options       +FollowSymLinks -MultiViews
 
-    RewriteEngine On
-    RewriteBase /
+  RewriteEngine On
+  RewriteBase   /
 
-    # Redirect /user/id
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^user/([A-Za-z0-9-]+)/?$ /user.php?id=$1 [NC,L] # Process users
-    RewriteRule ^team/([A-Za-z0-9-]+)/?$ /team.php?teamid=$1 [NC,L] # Process teams
+  # Redirect /user/id
+  RewriteCond   %{REQUEST_FILENAME} !-f
+  RewriteCond   %{REQUEST_FILENAME} !-d
+  RewriteRule   ^user/([A-Za-z0-9-]+)/?$ /user.php?id=$1 [NC,L] # Process users
+  RewriteRule   ^team/([A-Za-z0-9-]+)/?$ /team.php?teamid=$1 [NC,L] # Process teams
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule . / [NC,L,R=302] #Redirect 404 urls to index
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule   . / [NC,L,R=301] #Redirect 404 urls to index
 </IfModule>
 
 <IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType text/css          "access plus 1 month"
-ExpiresByType text/x-javascript "access plus 1 month"
-ExpiresByType image/x-icon      "access plus 1 year"
-ExpiresByType font/ttf          "access plus 1 month"
-ExpiresByType font/woff         "access plus 1 month"
+  ExpiresActive On
+  ExpiresByType text/css          "access plus 1 month"
+  ExpiresByType text/x-javascript "access plus 1 month"
+  ExpiresByType image/x-icon      "access plus 1 year"
+  ExpiresByType font/ttf          "access plus 1 month"
+  ExpiresByType font/woff         "access plus 1 month"
 </IfModule>

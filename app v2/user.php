@@ -464,7 +464,15 @@
               };
 
               if (empty ($this->xml->AccountName)) {
-                echo '<p class="h3 text-center">Oops!<br /><small>This account doesn&#39;t exist</small></p>';
+                echo '<div class="bg"><p>Oops<br /> this account doesn&#39;t exist!</p><div class="Grid">
+                  <div class="Grid-cell Exist">
+                    <div>
+                      <small>User Stats</small>
+                      <input id="userid" name="id" type="text" placeholder="Wopian" value="" required>
+                      <button type="submit" onclick="user()">View</button>
+                    </div>
+                  </div>
+                </div></div>';
               };
             }
           }
@@ -492,6 +500,11 @@
         fill: ["#177BBB", "#E1E6EF"]
       });
     });
+    function user() {
+      userid = document.getElementById('userid').value;
+      /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
+      location.href = '/user/' + userid;
+    }
     </script>
 
 </body>
