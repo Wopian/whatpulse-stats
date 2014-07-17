@@ -23,8 +23,16 @@
 
 <body>
   <header>
-    <div><h1><a href="./" data-animation="4">WhatPulse Stats</a></h1></div>
-    <nav><a href="./user" data-animation="3">User</a> <a href="./team" data-animation="3">Team</a> <a href="./#compare" data-animation="3">Compare</a></nav>
+    <div>
+      <h1>
+        <a href="./" data-animation="4">WhatPulse Stats</a>
+      </h1>
+    </div>
+    <!--<nav>
+      <a>User</a>
+      <a>Team</a>
+      <a>Compare</a>
+    </nav>-->
   </header>
 
   <main>
