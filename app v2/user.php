@@ -230,7 +230,7 @@
                   <div class="Grid-cell">
                     <div>
                       <small>Keys & Clicks Ratio</small>
-                      <span class="h2 chart">'.round((str_replace(",", "",$this->keys->total) / str_replace(",", "",$this->clicks->total)), 1).':1<span class="pie pie-a" data-diameter="24">'.str_replace(",", "",$this->clicks->total).','.str_replace(",", "",$this->keys->total).'</span></span>
+                      <span class="h2 chart">'.round((str_replace(",", "",$this->keys->total) / str_replace(",", "",$this->clicks->total)), 2).':1<span class="pie pie-a" data-diameter="24">'.str_replace(",", "",$this->clicks->total).','.str_replace(",", "",$this->keys->total).'</span></span>
                       <small>Keys To Clicks</small>
                     </div>
                   </div>
