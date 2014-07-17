@@ -4,14 +4,17 @@
   <title>Wopian - WhatPulse User Stats</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
 </head>
 
 <body>
   <header>
-    <div><h1><a href="../">WhatPulse Stats</a></h1></div>
-    <nav><a href="./">User</a> <a href="../team">Team</a> <a href="../compare">Compare</a></nav>
+    <div>
+      <h1>
+        <a href="../">WhatPulse Stats</a>
+      </h1>
+    </div>
   </header>
 
   <main>
@@ -504,8 +507,8 @@
       userid = document.getElementById('userid').value;
       /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
       location.href = '/user/' + userid;
-    }
-    </script>
+    };
+  </script>
 
 </body>
 </html>

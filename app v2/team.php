@@ -10,8 +10,11 @@
 
 <body>
   <header>
-    <div><h1><a href="../">WhatPulse Stats</a></h1></div>
-    <nav><a href="../user">User</a> <a href="./">Team</a> <a href="../compare">Compare</a></nav>
+    <div>
+      <h1>
+        <a href="../">WhatPulse Stats</a>
+      </h1>
+    </div>
   </header>
 
   <main>
