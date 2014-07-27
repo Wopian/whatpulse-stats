@@ -54,6 +54,56 @@
         return $n_format;
       };
 
+      function pulseNum($pulse) {
+        if ($pulse < 60) {
+          // < 1 Min
+          $pulse_format = number_format(($pulse), 0);
+        }
+        else if ($pulse >= 60 && $pulse < 3600) {
+          // >= 1 Min, < 1 Hour
+          $pulse_format = number_format(($pulse / 60), 0);
+        }
+        else if ($pulse >= 3600 && $pulse < 86400) {
+          // >= 1 Hour, < 1 Day
+          $pulse_format = number_format(($pulse / 3600), 0);
+        }
+        else if ($pulse >= 86400 && $pulse < 604800) {
+          // >= 1 Day, < 7 Days
+          $pulse_format = number_format(($pulse / 86400), 0);
+        }
+        else if ($pulse >= 604800) {
+          // >= 1 Week
+          $pulse_format = number_format(($pulse / 86400), 0);
+        }
+
+        return $pulse_format;
+      };
+
+      function pulseOrd($pulse) {
+        if ($pulse < 60) {
+          // < 1 Min
+          $pulse_ord = "Seconds";
+        }
+        else if ($pulse >= 60 && $pulse < 3600) {
+          // >= 1 Min, < 1 Hour
+          $pulse_ord = "Minutes";
+        }
+        else if ($pulse >= 3600 && $pulse < 86400) {
+          // >= 1 Hour, < 1 Day
+          $pulse_ord = "Hours";
+        }
+        else if ($pulse >= 86400 && $pulse < 604800) {
+          // >= 1 Day, < 7 Days
+          $pulse_ord = "Days";
+        }
+        else if ($pulse >= 604800) {
+          // >= 1 Week
+          $pulse_ord = "Weeks";
+        }
+
+        return $pulse_ord;
+      };
+
       // WhatPulse Stats
       class Stat {
         private $data;//contains total perminute perhour perday
@@ -194,8 +244,8 @@
                   <div class="Grid-cell">
                     <div>
                       <small>Last Pulsed</small>
-                      <span class="h2">'.number_format($this->lastpulseago / 3600, 2).'</span>
-                      <small>Minutes Ago</small>
+                      <span class="h2">'.pulseNum($this->lastpulseago).'</span>
+                      <small>'.pulseOrd($this->lastpulseago).' Ago</small>
                     </div>
                   </div>
 
