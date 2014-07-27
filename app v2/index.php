@@ -71,7 +71,18 @@
   </main>
 
   <footer>
-    <pre>dev.boomcraft.co.uk/4</pre>
+    <div>
+      <span class="left">
+        <a href="/stats">Overall Stats</a> //
+        <a href="/privacy">Privacy Policy</a>
+      </span>
+      <span class="right">
+        <a href="//jamesharris.net">Portfolio</a> //
+        <a href="//colonizer.jamesharris.net">Colonizer</a> //
+        <a href="//lastfm.jamesharris.net">Lastistics</a> //
+        <a href="//boomcraft.co.uk">Boomcraft</a>
+      </span>
+    </div>
   </footer>
 
   <script type="text/javascript">

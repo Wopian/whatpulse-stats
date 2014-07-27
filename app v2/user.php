@@ -537,7 +537,7 @@
               };
 
               if (empty ($this->xml->AccountName)) {
-                echo '<div class="bg"><p>Oops<br /> this account doesn&#39;t exist!</p><div class="Grid">
+                echo '<div class="bg"><p><strong>Oops</strong><br /> this account doesn&#39;t exist!</p><div class="Grid">
                   <div class="Grid-cell Exist">
                     <div>
                       <small>User Stats</small>
@@ -551,14 +551,14 @@
                     <footer>
                       <div>
                         <span class="left">
-                          <a href="#">Overall Stats</a> //
-                          <a href="#">Privacy Policy</a>
+                          <a href="/stats">Overall Stats</a> //
+                          <a href="/privacy">Privacy Policy</a>
                         </span>
                         <span class="right">
-                          <a href="#">Portfolio</a> //
-                          <a href="#">Colonizer</a> //
-                          <a href="#">Lastistics</a> //
-                          <a href="#">Boomcraft</a>
+                          <a href="//jamesharris.net">Portfolio</a> //
+                          <a href="//colonizer.jamesharris.net">Colonizer</a> //
+                          <a href="//lastfm.jamesharris.net">Lastistics</a> //
+                          <a href="//boomcraft.co.uk">Boomcraft</a>
                         </span>
                       </div>
                     </footer>
