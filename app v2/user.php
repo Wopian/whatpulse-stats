@@ -187,7 +187,7 @@
                     <div>
                       <small>Pulses</small>
                       <span class="h2">'.$this->xml->Pulses.'</span>
-                      <small>Avg. '.round($this->xml->Pulses / $this->days).' Per Day</small>
+                      <small>'.round($this->xml->Pulses / $this->days).' Per Day</small>
                     </div>
                   </div>
 
