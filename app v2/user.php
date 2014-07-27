@@ -547,38 +547,44 @@
                   </div>
                 </div></div>';
               };
+              echo '</main>
+                    <footer>
+                      <div>
+                        <span class="left">
+                          <a href="#">Overall Stats</a> //
+                          <a href="#">Privacy Policy</a>
+                        </span>
+                        <span class="right">
+                          <a href="#">Portfolio</a> //
+                          <a href="#">Colonizer</a> //
+                          <a href="#">Lastistics</a> //
+                          <a href="#">Boomcraft</a>
+                        </span>
+                      </div>
+                    </footer>
+                    <script src="../assets/javascript/app.js"></script>
+                    <script>
+                      $(function() {
+                        $("span.pie").peity("pie");
+                        $(".pie-a").peity("pie", {
+                          fill: ["#E1E6EF", "#177BBB"]
+                        });
+                        $(".pie-b").peity("pie", {
+                          fill: ["#177BBB", "#E1E6EF"]
+                        });
+                      });
+                      function user() {
+                        userid = document.getElementById("userid").value;
+                        location.href = "/user/" + userid;
+                      };
+                    </script>
+
+                  </body>
+                </html>
+              ';
             }
           }
           $stats_id = $_GET["id"];
           $stats = new WhatPulse($stats_id);
           $stats->printStats();
     ?>
-
-  </main>
-
-  <footer>
-    <pre>dev.boomcraft.co.uk/4</pre>
-  </footer>
-
-  <script src="../assets/javascript/app.js"></script>
-  <script>
-    $(function() {
-      $("span.pie").peity("pie");
-
-      $(".pie-a").peity("pie", {
-        fill: ["#E1E6EF", "#177BBB"]
-      });
-
-      $(".pie-b").peity("pie", {
-        fill: ["#177BBB", "#E1E6EF"]
-      });
-    });
-    function user() {
-      userid = document.getElementById('userid').value;
-      /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
-      location.href = '/user/' + userid;
-    };
-  </script>
-
-</body>
-</html>
