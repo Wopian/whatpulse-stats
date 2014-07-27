@@ -1,24 +1,3 @@
-<!doctype html>
-<html>
-<head>
-  <title>Wopian - WhatPulse User Stats</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
-</head>
-
-<body>
-  <header>
-    <div>
-      <h1>
-        <a href="../">WhatPulse Stats</a>
-      </h1>
-    </div>
-  </header>
-
-  <main>
-
     <?php
       // Byte Conversion
       function formatBytes($bytes, $precision = 2) {
@@ -53,7 +32,7 @@
 
         return $n_format;
       };
-
+      // Last Pulse Time
       function pulseNum($pulse) {
         if ($pulse < 60) {
           // < 1 Min
@@ -75,35 +54,57 @@
           // >= 1 Week
           $pulse_format = number_format(($pulse / 86400), 0);
         }
-
         return $pulse_format;
       };
-
       function pulseOrd($pulse) {
         if ($pulse < 60) {
-          // < 1 Min
-          $pulse_ord = "Seconds";
+          if ($pulse == 1) {
+            $pulse_ord = "Second";
+          }
+          else {
+            $pulse_ord = "Seconds";
+          }
         }
         else if ($pulse >= 60 && $pulse < 3600) {
-          // >= 1 Min, < 1 Hour
-          $pulse_ord = "Minutes";
+          if ($pulse == 60 && $pulse < 120) {
+            $pulse_ord = "Minute";
+          }
+          else {
+            $pulse_ord = "Minutes";
+          }
         }
         else if ($pulse >= 3600 && $pulse < 86400) {
-          // >= 1 Hour, < 1 Day
-          $pulse_ord = "Hours";
+          if ($pulse == 3600 && $pulse < 7200) {
+            $pulse_ord = "Hour";
+          }
+          else {
+            $pulse_ord = "Hours";
+          }
         }
         else if ($pulse >= 86400 && $pulse < 604800) {
-          // >= 1 Day, < 7 Days
-          $pulse_ord = "Days";
+          if ($pulse == 86400 && $pulse < 172800) {
+            $pulse_ord = "Day";
+          }
+          else {
+            $pulse_ord = "Days";
+          }
         }
         else if ($pulse >= 604800) {
-          // >= 1 Week
-          $pulse_ord = "Weeks";
+          if ($pulse == 604800 && $pulse < 1209600) {
+            $pulse_ord = "Week";
+          }
+          else {
+            $pulse_ord = "Weeks";
+          }
         }
-
         return $pulse_ord;
       };
-
+      // Account Title
+      function validAccount($account) {
+        if (strlen($account) > 0) {
+          return " - ";
+        }
+      };
       // WhatPulse Stats
       class Stat {
         private $data;//contains total perminute perhour perday
@@ -211,6 +212,25 @@
           $this->xml = new SimpleXMLElement($content);
         }
         function printStats() {
+          echo '
+            <!doctype html>
+            <html>
+              <head>
+                <title>'.$this->xml->AccountName.''.validAccount($this->xml->AccountName).'WhatPulse User Stats</title>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+                <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+              </head>
+              <body>
+                <header>
+                  <div>
+                    <h1>
+                      <a href="../">WhatPulse Stats</a>
+                    </h1>
+                  </div>
+                </header>
+                <main>';
           if (!empty ($this->xml->AccountName)) {
             echo '
               <div class="bg">
@@ -228,7 +248,7 @@
                   <div class="Grid-cell">
                     <div>
                       <small>Joined</small>
-                      <span class="h2">'.$this->days.'</span>
+                      <span class="h2">'.number_format($this->days, 0).'</span>
                       <small>Days Ago</small>
                     </div>
                   </div>
