@@ -1,3 +1,8 @@
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+
 <IfModule mod_rewrite.c>
   Options       +FollowSymLinks -MultiViews
 
@@ -22,3 +27,11 @@
   # ExpiresByType font/ttf          "access plus 1 month"
   # ExpiresByType font/woff         "access plus 1 month"
 </IfModule>
+
+ErrorDocument 400 /error/400.php
+ErrorDocument 401 /error/401.php
+ErrorDocument 403 /error/403.php
+ErrorDocument 404 /error/404.php
+ErrorDocument 500 /error/500.php
+ErrorDocument 503 /error/503.php
+ErrorDocument 504 /error/504.php
