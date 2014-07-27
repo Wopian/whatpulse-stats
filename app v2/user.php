@@ -66,7 +66,7 @@
           }
         }
         else if ($pulse >= 60 && $pulse < 3600) {
-          if ($pulse == 60 && $pulse < 120) {
+          if ($pulse < 120) {
             $pulse_ord = "Minute";
           }
           else {
@@ -74,7 +74,7 @@
           }
         }
         else if ($pulse >= 3600 && $pulse < 86400) {
-          if ($pulse == 3600 && $pulse < 7200) {
+          if ($pulse < 7200) {
             $pulse_ord = "Hour";
           }
           else {
@@ -82,7 +82,7 @@
           }
         }
         else if ($pulse >= 86400 && $pulse < 604800) {
-          if ($pulse == 86400 && $pulse < 172800) {
+          if ($pulse < 172800) {
             $pulse_ord = "Day";
           }
           else {
@@ -90,7 +90,7 @@
           }
         }
         else if ($pulse >= 604800) {
-          if ($pulse == 604800 && $pulse < 1209600) {
+          if ($pulse < 1209600) {
             $pulse_ord = "Week";
           }
           else {
